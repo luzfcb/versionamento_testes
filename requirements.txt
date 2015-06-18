@@ -1,0 +1,22 @@
+Django==1.8.2
+psycopg2==2.6.1
+python-decouple==2.3
+dj-database-url==0.3.0
+six==1.9.0
+django-reversion==1.8.7
+django-reversion-compare==0.5.2
+
+django-extensions==1.5.5
+#django-crispy-forms==1.4.0
+-e git://github.com/maraujop/django-crispy-forms.git@dev#egg=django-crispy-forms
+
+crispy-semantic-ui==1.0.0
+django-simple-history==1.6.1
+django-braces==1.8.0
+django-simple-audit==0.1.21
+cleanerversion
+django-versionfield2
+
+Werkzeug==0.10.4
+-e git://github.com/django-debug-toolbar/django-debug-toolbar.git@master#egg=django-debug-toolbar
+django-dynamic-scraper==0.5.1
