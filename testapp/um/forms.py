@@ -3,15 +3,15 @@ from django import forms
 
 from core.forms import SaveHelper
 
-from .models import ImpliUm
+from .models import Um
 
-class ImpliUmForm(forms.ModelForm):
+class UmForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
-        super(ImpliUmForm, self).__init__(*args, **kwargs)
+        super(UmForm, self).__init__(*args, **kwargs)
         self.helper = SaveHelper(self)
 
     class Meta:
-        model = ImpliUm
+        model = Um
         fields = [
             'texto',
             'versao'

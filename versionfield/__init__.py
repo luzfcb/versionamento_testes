@@ -6,6 +6,7 @@ from .version import Version
 from .utils import convert_version_string_to_int, convert_version_int_to_string
 from django.utils import six 
 
+
 class VersionField(models.PositiveIntegerField):
 
     """

@@ -41,11 +41,15 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'autoadmin',
+
     'debug_toolbar',
     'braces',
     'django_extensions',
+
     'reversion',
     'reversion_compare',
+
     'simple_history',
     'dynamic_scraper',
     'semantic_ui',
@@ -54,7 +58,8 @@ INSTALLED_APPS = (
 
     'core',
 
-    'impli_um',
+    'um',
+    'dois',
 
     'auditavel',
     'processo',
@@ -164,3 +169,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+AUTOADMIN_EMAI = 'admin@admin.com'
+AUTOADMIN_PASSWORD = 'admin'
+AUTOADMIN_USERNAME = 'admin'

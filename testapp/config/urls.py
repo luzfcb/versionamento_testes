@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^$', generic.TemplateView.as_view(template_name='index.html'), name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include(processo.livro_urls)),
-    url(r'', include('impli_um.urls')),
+    url(r'', include('um.urls')),
+    url(r'', include('dois.urls')),
     url('^', include('django.contrib.auth.urls')),
 ]

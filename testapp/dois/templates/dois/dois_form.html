@@ -1,15 +1,25 @@
-{% extends "impli_um/base.html" %}
+{% extends "dois/base.html" %}
 {% load crispy_forms_tags %}
+{% load core_tags %}
+
 {% block conteudo %}
 
         {{ block.super }}
-        <a class="btn btn-xs btn-info" href="{% url "impli_um_list" %}">Listar Livros</a>
+        <a class="btn btn-xs btn-info" href="{% url "dois_list" %}">Listar Livros</a>
     <hr>
 
 
     {% if form %}
 
         {% crispy form %}
+
+        {% if version_list %}
+            <ul>
+                {% for versao in version_list %}
+                    {% render_object versao url "dois_update" %}
+                {% endfor %}
+            </ul>
+        {% endif %}
 
 {#        <form action="{% url "livro_create" %}" method="post">#}
 {#            {{ form |crispy }}#}

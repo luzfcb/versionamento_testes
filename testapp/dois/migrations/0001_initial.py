@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.db import models, migrations
-import versionfield
 
 
 class Migration(migrations.Migration):
@@ -12,11 +11,14 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='ImpliUm',
+            name='Dois',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(auto_created=True, verbose_name='ID', primary_key=True, serialize=False)),
                 ('texto', models.TextField()),
-                ('versao', versionfield.VersionField()),
+                ('versao', models.PositiveIntegerField(default=1)),
             ],
+            options={
+                'ordering': ['-id'],
+            },
         ),
     ]
