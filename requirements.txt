@@ -17,6 +17,8 @@ django-simple-audit==0.1.21
 cleanerversion
 django-versionfield2
 
+# https://github.com/nitely/Spirit.git
+
 Werkzeug==0.10.4
 -e git://github.com/django-debug-toolbar/django-debug-toolbar.git@master#egg=django-debug-toolbar
 django-dynamic-scraper==0.5.1
